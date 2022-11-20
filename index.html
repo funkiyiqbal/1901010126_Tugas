@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 class="">Form Biodata</h1>
+    <div class="container px-4 pt-4 text-center">
+
+        <!-- NIM -->
+        <div class="row ">
+            <div class="col-2">
+                <label class="nim">NIM</label>
+            </div>
+            <div class="col-2">
+                <label class="td">:</label>
+            </div>
+            <div class="col-8">
+                <input type="text" placeholder="Nim" name="NIM">
+            </div>
+        </div>
+        <!-- end NIM -->
+
+        <!-- USERNAME -->
+        <div class="row pt-4">
+            <div class="col-2">
+                <label class="name">NAMA</label>
+            </div>
+            <div class="col-2">
+                <label class="td">:</label>
+            </div>
+            <div class="col-8">
+                <input type="text" placeholder="Username" name="name">
+            </div>
+        </div>
+        <!-- end USERNAME -->
+
+        <!-- JENIS KELAMIN -->
+        <div class="row pt-4">
+            <div class="col-2">
+                <label class="name">JENIS KELAMIN</label>
+            </div>
+            <div class="col-2">
+                <label class="td">:</label>
+            </div>
+            <div class="col-8 ">
+                <div class="row">
+                    <div class="col">
+                        <input type="radio" name="pr">
+                        <label for="pria">Pria</label>
+                    </div>
+
+                    <div class="col">
+                        <input type="radio" name="wa">
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+            </div>
+            <!-- end JENIS KELAMIN -->
+
+            <!-- JURUSAN  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">JURUSAN</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <select name="formseleck" id="formseleck">
+                        <option value="pilih">pilih prodi</option>
+                        <option value="ilkom">ILMU KOMPUTER</option>
+                        <option value="ti">TEKNOLOGI INFORMASI</option>
+                        <option value="manegemen">MANEGEMEN</option>
+                        <option value="hukum">HUKUM</option>
+                    </select>
+                </div>
+            </div>
+            <!-- end JURUSAN -->
+
+            <!-- HOBBY  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">HOBBY</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col">
+                            <input type="radio" name="komputer">
+                            <label for="komputer">Komputer</label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" name="musik">
+                            <label for="musik">Musik</label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" name="olahraga">
+                            <label for="olahraga">Olahraga</label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" name="travelling">
+                            <label for="taravelling">Travelling</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end HOBBY -->
+
+            <!-- CATATAN  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">CATATAN</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="catatan">
+                </div>
+            </div>
+            <!-- end CATATAN -->
+
+            <!-- FOTO  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">FOTO</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <form action="/action_page.php">
+                        <input type="file" name="myfile" id="myfile">
+                    </form>
+                </div>
+            </div>
+            <!-- end FOTO -->
+
+            <!-- EMAIL  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="email">EMAIL</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" placeholder="Email" name="email">
+                </div>
+            </div>
+            <!-- end EMAIL -->
+
+            <!-- SANDI LOGIN  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">SANDI LOGIN</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <input type="password" id="sandi" name="sandi" minlength="8">
+                </div>
+            </div>
+            <!-- end SANDI LOGIN -->
+
+            <!-- ULANG SANDI LOGIN  -->
+            <div class="row pt-4">
+                <div class="col-2">
+                    <label class="name">ULANGI SANDI LOGIN</label>
+                </div>
+                <div class="col-2">
+                    <label class="td">:</label>
+                </div>
+                <div class="col-8">
+                    <input type="password" id="usandi" name="usandi">
+                </div>
+            </div>
+            <!-- end ULANG SANDI LOGIN -->
+
+
+            <div class="row pt-4">
+                <div class="col">
+                    <button class="simpan">SIMPAN</button>
+                    <button class="batal">BATAL</button>
+                    <button class="peringatan">PERINGATAN</button>
+                </div>
+            </div>
+
+
+
+</body>
+
+</html>

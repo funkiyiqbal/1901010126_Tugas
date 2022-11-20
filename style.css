@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    margin: 10pt 5pt 10pt 5pt;
+    padding: 10px 100px 10px 100px;
+}
+
+input {
+    text-align: left;
+    padding-right: 100pt;
+}
+
+.col-2 {
+    width: 182px;
+    text-align: left;
+}
+
+.container1 {
+    padding: 0px 10px 0px 10px;
+}
