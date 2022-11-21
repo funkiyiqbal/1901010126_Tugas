@@ -11,9 +11,14 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar bg-primary navbar-dark ">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Form Biodata</span>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
 
-
-    <h1 class="">Form Biodata</h1>
     <div class="container px-4 pt-4 text-center">
 
         <!-- NIM -->
@@ -25,7 +30,7 @@
                 <label class="td">:</label>
             </div>
             <div class="col-8">
-                <input type="text" placeholder="Nim" name="NIM">
+                <input type="text" class="form-control" placeholder="Nim" id="nim">
             </div>
         </div>
         <!-- end NIM -->
@@ -39,7 +44,7 @@
                 <label class="td">:</label>
             </div>
             <div class="col-8">
-                <input type="text" placeholder="Username" name="name">
+                <input type="text" class="form-control" placeholder="Name" id="name">
             </div>
         </div>
         <!-- end USERNAME -->
@@ -76,7 +81,7 @@
                     <label class="td">:</label>
                 </div>
                 <div class="col-8">
-                    <select name="formseleck" id="formseleck">
+                    <select name="formselect" id="formselect" class="form-select">
                         <option value="pilih">pilih prodi</option>
                         <option value="ilkom">ILMU KOMPUTER</option>
                         <option value="ti">TEKNOLOGI INFORMASI</option>
@@ -127,7 +132,7 @@
                     <label class="td">:</label>
                 </div>
                 <div class="col-8">
-                    <input type="text" name="catatan">
+                    <textarea class="form-control" rows="3" id="catatan"></textarea>
                 </div>
             </div>
             <!-- end CATATAN -->
@@ -142,7 +147,7 @@
                 </div>
                 <div class="col-8">
                     <form action="/action_page.php">
-                        <input type="file" name="myfile" id="myfile">
+                        <input class="form-control" type="file" id="myFile">
                     </form>
                 </div>
             </div>
@@ -157,7 +162,7 @@
                     <label class="td">:</label>
                 </div>
                 <div class="col-8">
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" class="form-control" placeholder="Email" id="email">
                 </div>
             </div>
             <!-- end EMAIL -->
@@ -171,7 +176,7 @@
                     <label class="td">:</label>
                 </div>
                 <div class="col-8">
-                    <input type="password" id="sandi" name="sandi" minlength="8">
+                    <input type="password" id="sandi" class="form-control" placeholder="Sandi" minlength="8">
                 </div>
             </div>
             <!-- end SANDI LOGIN -->
@@ -185,7 +190,7 @@
                     <label class="td">:</label>
                 </div>
                 <div class="col-8">
-                    <input type="password" id="usandi" name="usandi">
+                    <input type="password" id="usandi" class="form-control" placeholder="Ulangi Sandi" minlength="8">
                 </div>
             </div>
             <!-- end ULANG SANDI LOGIN -->
@@ -193,9 +198,9 @@
 
             <div class="row pt-4">
                 <div class="col">
-                    <button class="simpan">SIMPAN</button>
-                    <button class="batal">BATAL</button>
-                    <button class="peringatan">PERINGATAN</button>
+                    <button class="btn btn-primary">SIMPAN</button>
+                    <button class="btn btn-primary">BATAL</button>
+                    <button class="btn btn-primary">PERINGATAN</button>
                 </div>
             </div>
 
